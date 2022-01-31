@@ -1,0 +1,36 @@
+.footer {
+    height: 102px;
+    &__row {}
+    &__links {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 56.59px;
+    }
+    &__link {
+        align-self: center;
+    }
+    &__link:first-child {
+        justify-self: end;
+    }
+}
+
+@media(max-width:450px) {
+    .footer {
+        height: 102px;
+        &__row {}
+        &__links {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+        &__link {
+            align-self: center;
+            justify-self: center;
+        }
+        &__link:first-child {
+            justify-self: center;
+        }
+    }
+}
